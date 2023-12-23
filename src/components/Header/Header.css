@@ -1,0 +1,21 @@
+.header-content {
+  position: relative; /* Required for absolute positioning of the pseudo-element */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%; /* Full width */
+  padding-top: 10px;
+}
+
+.header-content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%; /* Center the line */
+  width: 90%; /* Adjust this width to control the length of the bottom border */
+  height: 2px; /* Height of the border */
+  background-color: white;
+  transform: translateX(
+    -50%
+  ); /* Center the line with respect to the container */
+}
