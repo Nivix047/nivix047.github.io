@@ -49,41 +49,38 @@ const Navbar = () => {
     >
       <List>
         <ListItem
-          className="about-link"
           component={Link}
           to="/"
           onClick={() => handleNavigation("/")}
+          className="about-link"
         >
           <ListItemText primary="About Me" />
         </ListItem>
         <ListItem
-          className="contact-link"
           component={Link}
           to="/contact"
           onClick={() => handleNavigation("/contact")}
+          className="contact-link"
         >
           <ListItemText primary="Contact Me" />
         </ListItem>
         <ListItem
-          className="resume-link"
           component={Link}
           to="/resume"
           onClick={() => handleNavigation("/resume")}
+          className="resume-link"
         >
           <ListItemText primary="Resume" />
         </ListItem>
         <ListItem onClick={() => window.open("https://twitter.com", "_blank")}>
-          <ListItemText primary="Twitter" />
           <TwitterIcon />
         </ListItem>
-        <ListItem onClick={() => navigate("/github")}>
-          <ListItemText primary="GitHub" />
+        <ListItem onClick={() => window.open("https://github.com", "_blank")}>
           <GitHubIcon />
         </ListItem>
         <ListItem
           onClick={() => window.open("https://www.linkedin.com", "_blank")}
         >
-          <ListItemText primary="LinkedIn" />
           <LinkedInIcon />
         </ListItem>
       </List>
@@ -115,24 +112,58 @@ const Navbar = () => {
                   value={value}
                   onChange={handleChange}
                   aria-label="basic tabs example"
+                  TabIndicatorProps={{ style: { display: "none" } }} // Hide underline
                 >
                   <Tab
                     component={Link}
                     to="/"
                     label="About Me"
-                    sx={{ color: "white", textTransform: "uppercase" }}
+                    sx={{
+                      color: "white",
+                      textTransform: "uppercase",
+                      "&:focus": {
+                        color: "your-focus-color", // Replace with your desired color
+                        backgroundColor: "your-focus-background-color", // Optional
+                      },
+                      "&:active, &:visited": {
+                        color: "white", // This ensures the color stays white on hover, active, and visited
+                      },
+                      "&:hover": { textDecoration: "underline" },
+                    }}
                   />
                   <Tab
                     component={Link}
                     to="/contact"
                     label="Contact Me"
-                    sx={{ color: "white", textTransform: "uppercase" }}
+                    sx={{
+                      color: "white",
+                      textTransform: "uppercase",
+                      "&:focus": {
+                        color: "your-focus-color", // Replace with your desired color
+                        backgroundColor: "your-focus-background-color", // Optional
+                      },
+                      "&:active, &:visited": {
+                        color: "white", // This ensures the color stays white on hover, active, and visited
+                      },
+                      "&:hover": { textDecoration: "underline" },
+                    }}
                   />
                   <Tab
                     component={Link}
                     to="/resume"
                     label="Resume"
-                    sx={{ color: "white", textTransform: "uppercase" }}
+                    sx={{
+                      color: "white",
+                      textTransform: "uppercase",
+                      "&:focus": {
+                        color: "your-focus-color", // Replace with your desired color
+                        backgroundColor: "your-focus-background-color", // Optional
+                      },
+                      "&:active, &:visited": {
+                        color: "white", // This ensures the color stays white on hover, active, and visited
+                      },
+                      "&:hover": { textDecoration: "underline" },
+                    }}
                   />
                 </Tabs>
                 <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -152,9 +183,7 @@ const Navbar = () => {
                   </IconButton>
                   <IconButton
                     color="inherit"
-                    onClick={() =>
-                      window.open("https://github.com/nivix047", "_blank")
-                    }
+                    onClick={() => window.open("https://github.com", "_blank")}
                   >
                     <GitHubIcon />
                   </IconButton>
