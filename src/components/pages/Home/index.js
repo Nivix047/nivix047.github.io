@@ -1,3 +1,4 @@
+// src/components/pages/Home/index.js
 import React from "react";
 import { Box, Grid, Typography, Paper } from "@mui/material";
 import "./Home.css";
@@ -29,38 +30,25 @@ const Home = () => {
         justifyContent="space-around"
         className="home-bottom-box"
       >
-        <Grid item xs={12} sm={4} md={4}>
-          <Paper className="home-image-paper">
-            {/* Placeholder Image - replace with actual image paths */}
-            <img
-              src="path-to-nft-website.jpg"
-              alt="NFT Website"
-              className="home-image"
-            />
+        {/* NFT Website */}
+        <Grid item xs={12} sm={4}>
+          <Paper className="home-image-paper nft-website">
             <Typography variant="subtitle1">NFT Website</Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={4} md={4}>
-          <Paper className="home-image-paper">
-            {/* Placeholder Image - replace with actual image paths */}
-            <img
-              src="path-to-knowledge-generator.jpg"
-              alt="Knowledge base generator"
-              className="home-image"
-            />
+
+        {/* Knowledge Base Generator */}
+        <Grid item xs={12} sm={4}>
+          <Paper className="home-image-paper knowledge-generator">
             <Typography variant="subtitle1">
               Knowledge base generator
             </Typography>
           </Paper>
         </Grid>
-        <Grid item xs={12} sm={4} md={4}>
-          <Paper className="home-image-paper">
-            {/* Placeholder Image - replace with actual image paths */}
-            <img
-              src="path-to-chat-app.jpg"
-              alt="Chat App"
-              className="home-image"
-            />
+
+        {/* Chat App */}
+        <Grid item xs={12} sm={4}>
+          <Paper className="home-image-paper chat-app">
             <Typography variant="subtitle1">Chat App</Typography>
           </Paper>
         </Grid>

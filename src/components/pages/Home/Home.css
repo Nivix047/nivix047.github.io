@@ -5,7 +5,7 @@
 
 .home-image-box {
   width: 100%; /* Take full width of the grid */
-  height: 100%; /* Take full height for alignment */
+  height: 300px; /* Set a fixed height */
   background: url("../../../assets/avatar.png") no-repeat center center / cover; /* Update with the correct path */
 }
 
@@ -23,10 +23,32 @@
   text-align: center;
   padding: 10px;
   height: 200px; /* Set a fixed height for uniformity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: none; /* No background by default */
+}
+
+/* Styles for the individual images */
+.nft-website {
+  background: url("../../../assets/project1.png") no-repeat center center /
+    cover;
+}
+
+.knowledge-generator {
+  background: url("../../../assets/project2.png") no-repeat center center /
+    cover;
+}
+
+.chat-app {
+  background: url("../../../assets/project3.png") no-repeat center center /
+    cover;
 }
 
 .home-image {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%; /* Ensure the image takes up all the available width */
+  max-height: 150px; /* Set a maximum height */
   object-fit: contain; /* This will make sure the image fits within the element */
+  margin-bottom: 10px; /* Add some space between the image and the text */
 }
