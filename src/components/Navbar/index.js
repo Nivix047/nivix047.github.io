@@ -38,9 +38,7 @@ const Navbar = () => {
 
   const handleNavigation = (path) => {
     setDrawerOpen(false);
-    if (path) {
-      navigate(path);
-    }
+    navigate(path);
   };
 
   const drawerContent = (
@@ -51,46 +49,31 @@ const Navbar = () => {
       onKeyDown={handleDrawerToggle}
     >
       <List>
-        {["About Me", "Contact Me", "Resume"].map((text, index) => (
-          <ListItem key={text}>
-            <ButtonBase
-              sx={{ width: "100%", justifyContent: "flex-start" }}
-              onClick={() =>
-                handleNavigation(
-                  index === 0 ? "/about" : index === 1 ? "/contact" : "/resume"
-                )
-              }
-            >
-              <ListItemText primary={text} />
-            </ButtonBase>
-          </ListItem>
-        ))}
-        <ListItem>
-          <ButtonBase
-            sx={{ width: "100%", justifyContent: "flex-start" }}
-            onClick={() => window.open("https://twitter.com", "_blank")}
-          >
-            <ListItemText primary="Twitter" />
-            <TwitterIcon />
-          </ButtonBase>
+        {/* The "About Me" tab points to the home page now */}
+        <ListItem button onClick={() => handleNavigation("/")}>
+          <ListItemText primary="About Me" />
         </ListItem>
-        <ListItem>
-          <ButtonBase
-            sx={{ width: "100%", justifyContent: "flex-start" }}
-            onClick={() => navigate("/github")}
-          >
-            <ListItemText primary="GitHub" />
-            <GitHubIcon />
-          </ButtonBase>
+        {/* The other items remain unchanged */}
+        <ListItem button onClick={() => handleNavigation("/contact")}>
+          <ListItemText primary="Contact Me" />
         </ListItem>
-        <ListItem>
-          <ButtonBase
-            sx={{ width: "100%", justifyContent: "flex-start" }}
-            onClick={() => navigate("/indeed")}
-          >
-            <ListItemText primary="Indeed" />
-            <BusinessCenterIcon />
-          </ButtonBase>
+        <ListItem button onClick={() => handleNavigation("/resume")}>
+          <ListItemText primary="Resume" />
+        </ListItem>
+        <ListItem
+          button
+          onClick={() => window.open("https://twitter.com", "_blank")}
+        >
+          <ListItemText primary="Twitter" />
+          <TwitterIcon />
+        </ListItem>
+        <ListItem button onClick={() => navigate("/github")}>
+          <ListItemText primary="GitHub" />
+          <GitHubIcon />
+        </ListItem>
+        <ListItem button onClick={() => navigate("/indeed")}>
+          <ListItemText primary="Indeed" />
+          <BusinessCenterIcon />
         </ListItem>
       </List>
     </Box>
@@ -122,9 +105,10 @@ const Navbar = () => {
                   onChange={handleChange}
                   aria-label="basic tabs example"
                 >
+                  {/* This Tab now points to the home page */}
                   <Tab
                     component={Link}
-                    to="/about"
+                    to="/"
                     label="About Me"
                     sx={{ color: "white", textTransform: "uppercase" }}
                   />

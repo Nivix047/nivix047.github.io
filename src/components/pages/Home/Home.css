@@ -1,0 +1,32 @@
+.home-container {
+  padding: 20px;
+}
+
+.home-image-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-portrait {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* If you want a circular mask for the image */
+}
+
+.home-header-box {
+  padding: 20px;
+}
+
+.home-bottom-box {
+  margin-top: 20px;
+}
+
+.home-image-paper {
+  text-align: center;
+  padding: 10px;
+}
+
+.home-image {
+  max-width: 100%;
+  height: auto;
+}
