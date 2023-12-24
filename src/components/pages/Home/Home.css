@@ -28,7 +28,8 @@
 }
 
 .home-bottom-box {
-  margin-top: 32px;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
   background-color: black;
 }
 
@@ -47,15 +48,15 @@
 }
 
 .nft-website {
-  padding-bottom: 8vh;
+  padding-bottom: 10vh;
 }
 
 .knowledge-generator {
-  padding-bottom: 8vh;
+  padding-bottom: 10vh;
 }
 
 .chat-app {
-  padding-bottom: 8vh;
+  padding-bottom: 10vh;
 }
 
 /* Styles for the individual project images */

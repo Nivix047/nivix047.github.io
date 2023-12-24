@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom"; // Corrected import
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import {
   AppBar,
   Toolbar,
   Box,
-  ButtonBase,
   IconButton,
   Drawer,
   List,
@@ -49,36 +49,42 @@ const Navbar = () => {
       onKeyDown={handleDrawerToggle}
     >
       <List>
-        {/* The "About Me" tab points to the home page now */}
-        <ListItem button onClick={() => handleNavigation("/")}>
+        <ListItem
+          component={RouterLink}
+          to="/"
+          onClick={() => handleNavigation("/")}
+        >
           <ListItemText primary="About Me" />
         </ListItem>
-        {/* The other items remain unchanged */}
-        <ListItem button onClick={() => handleNavigation("/contact")}>
+        <ListItem
+          component={RouterLink}
+          to="/contact"
+          onClick={() => handleNavigation("/contact")}
+        >
           <ListItemText primary="Contact Me" />
         </ListItem>
-        <ListItem button onClick={() => handleNavigation("/resume")}>
+        <ListItem
+          component={RouterLink}
+          to="/resume"
+          onClick={() => handleNavigation("/resume")}
+        >
           <ListItemText primary="Resume" />
         </ListItem>
-        <ListItem
-          button
-          onClick={() => window.open("https://twitter.com", "_blank")}
-        >
+        <ListItem onClick={() => window.open("https://twitter.com", "_blank")}>
           <ListItemText primary="Twitter" />
           <TwitterIcon />
         </ListItem>
-        <ListItem button onClick={() => navigate("/github")}>
+        <ListItem onClick={() => navigate("/github")}>
           <ListItemText primary="GitHub" />
           <GitHubIcon />
         </ListItem>
-        <ListItem button onClick={() => navigate("/indeed")}>
+        <ListItem onClick={() => navigate("/indeed")}>
           <ListItemText primary="Indeed" />
           <BusinessCenterIcon />
         </ListItem>
       </List>
     </Box>
   );
-
   return (
     <AppBar position="static" sx={{ backgroundColor: "black", color: "white" }}>
       <Toolbar>

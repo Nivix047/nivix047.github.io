@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%; /* Full width */
+  width: 80%; /* Full width */
   padding-top: 10px;
 }
 
@@ -12,7 +12,7 @@
   position: absolute;
   bottom: 0;
   left: 50%; /* Center the line */
-  width: 90%; /* Adjust this width to control the length of the bottom border */
+  width: 100%; /* Adjust this width to control the length of the bottom border */
   height: 2px; /* Height of the border */
   background-color: white;
   transform: translateX(

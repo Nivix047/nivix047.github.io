@@ -19,11 +19,6 @@ const Footer = () => {
               </Link>
             </Typography>
             <Typography variant="body2" className="footer-link-item">
-              <Link href="/terms" color="inherit" underline="hover">
-                Sacred Genesis Terms & Conditions
-              </Link>
-            </Typography>
-            <Typography variant="body2" className="footer-link-item">
               <Link href="/privacy" color="inherit" underline="hover">
                 Privacy Policy
               </Link>

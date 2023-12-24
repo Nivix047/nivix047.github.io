@@ -12,7 +12,7 @@
   position: absolute;
   top: 0;
   left: 50%; /* Center the line */
-  width: 95%; /* Or any width you prefer */
+  width: 80%; /* Or any width you prefer */
   height: 1px;
   background-color: white;
   transform: translateX(
