@@ -1,36 +1,30 @@
 /* Home.css */
 .home-container {
   padding: 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .home-image-box {
-  width: 100%; /* Take full width of the grid */
-  height: 300px; /* Set a fixed height */
-  background: url("../../../assets/avatar.png") no-repeat center center / cover; /* Update with the correct path */
+  background: url("../../../assets/avatar.png") no-repeat center center / cover;
+  height: 400px; /* Adjust the height to match your design */
 }
 
-.home-header-box {
+.home-header-text {
   padding: 20px;
-  display: flex;
-  align-items: center; /* This will vertically center the text */
 }
 
 .home-bottom-box {
-  margin-top: 20px;
+  margin-top: 32px; /* Adjust the top margin to match your design */
 }
 
-.home-image-paper {
-  text-align: center;
-  padding: 10px;
-  height: 200px; /* Set a fixed height for uniformity */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: none; /* No background by default */
+.home-project-image {
+  background-size: cover;
+  background-position: center;
+  height: 150px; /* Adjust the height to match your design */
+  margin-bottom: 8px;
 }
 
-/* Styles for the individual images */
 .nft-website {
   background: url("../../../assets/project1.png") no-repeat center center /
     cover;
@@ -44,11 +38,4 @@
 .chat-app {
   background: url("../../../assets/project3.png") no-repeat center center /
     cover;
-}
-
-.home-image {
-  width: 100%; /* Ensure the image takes up all the available width */
-  max-height: 150px; /* Set a maximum height */
-  object-fit: contain; /* This will make sure the image fits within the element */
-  margin-bottom: 10px; /* Add some space between the image and the text */
 }

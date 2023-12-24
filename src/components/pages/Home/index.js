@@ -1,56 +1,47 @@
-// src/components/pages/Home/index.js
 import React from "react";
-import { Box, Grid, Typography, Paper } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import "./Home.css";
 
 const Home = () => {
   return (
     <Box className="home-container">
-      {/* Top Box with 20-80 split */}
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={4} md={2}>
-          {/* Left Side - Portrait as a background image */}
+      {/* Top Box with the main header and image */}
+      <Grid container spacing={2} alignItems="center">
+        <Grid item xs={12} md={5}>
           <Box className="home-image-box" />
         </Grid>
-        <Grid item xs={12} sm={8} md={10}>
-          {/* Right Side - Header */}
-          <Box className="home-header-box">
-            <Typography variant="h3">
-              Crafting Web Magic with Full-stack Wizardry, AI Adventures, and
-              NFT Fun.
-            </Typography>
-          </Box>
+        <Grid item xs={12} md={7}>
+          <Typography variant="h3" className="home-header-text">
+            Crafting Web Magic with Full-stack Wizardry, AI Adventures, and NFT
+            Fun.
+          </Typography>
         </Grid>
       </Grid>
 
-      {/* Bottom Box with three images */}
+      {/* Bottom Box with three smaller images */}
       <Grid
         container
         spacing={2}
-        justifyContent="space-around"
+        justifyContent="center"
         className="home-bottom-box"
       >
-        {/* NFT Website */}
-        <Grid item xs={12} sm={4}>
-          <Paper className="home-image-paper nft-website">
-            <Typography variant="subtitle1">NFT Website</Typography>
-          </Paper>
+        <Grid item xs={6} sm={4} md={3} lg={2}>
+          <Box className="home-project-image nft-website" />
+          <Typography variant="subtitle1" gutterBottom>
+            NFT Website
+          </Typography>
         </Grid>
-
-        {/* Knowledge Base Generator */}
-        <Grid item xs={12} sm={4}>
-          <Paper className="home-image-paper knowledge-generator">
-            <Typography variant="subtitle1">
-              Knowledge base generator
-            </Typography>
-          </Paper>
+        <Grid item xs={6} sm={4} md={3} lg={2}>
+          <Box className="home-project-image knowledge-generator" />
+          <Typography variant="subtitle1" gutterBottom>
+            Knowledge base generator
+          </Typography>
         </Grid>
-
-        {/* Chat App */}
-        <Grid item xs={12} sm={4}>
-          <Paper className="home-image-paper chat-app">
-            <Typography variant="subtitle1">Chat App</Typography>
-          </Paper>
+        <Grid item xs={6} sm={4} md={3} lg={2}>
+          <Box className="home-project-image chat-app" />
+          <Typography variant="subtitle1" gutterBottom>
+            Chat App
+          </Typography>
         </Grid>
       </Grid>
     </Box>
