@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import emailjs from "emailjs-com";
 import "./Contact.css";
-import { validateEmail } from "../../../../utils/validateEmail";
+import { validateEmail } from "../../../utils/validateEmail";
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({

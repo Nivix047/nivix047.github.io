@@ -20,6 +20,11 @@
   ); /* Center the line with respect to the container */
 }
 
+/* New CSS for making social media items cursor pointer */
+.social-media-item {
+  cursor: pointer;
+}
+
 .about-link {
   color: black !important; /* Override color for visited links */
 }

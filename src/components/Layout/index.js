@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../pages/Home";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
-import Contact from "../pages/Home/Contact";
+import Contact from "../pages/Contact";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function Layout() {
