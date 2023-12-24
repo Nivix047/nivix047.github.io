@@ -19,3 +19,27 @@
     -50%
   ); /* Center the line with respect to the container */
 }
+
+.about-link {
+  color: black !important; /* Override color for visited links */
+}
+
+.about-link:visited {
+  color: black !important; /* Keep visited links white */
+}
+
+.contact-link {
+  color: black !important; /* Override color for visited links */
+}
+
+.contact-link:visited {
+  color: black !important; /* Keep visited links white */
+}
+
+.resume-link {
+  color: black !important; /* Override color for visited links */
+}
+
+.resume-link:visited {
+  color: black !important; /* Keep visited links white */
+}

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Link as RouterLink } from "react-router-dom"; // Corrected import
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import {
@@ -18,7 +17,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -50,21 +49,24 @@ const Navbar = () => {
     >
       <List>
         <ListItem
-          component={RouterLink}
+          className="about-link"
+          component={Link}
           to="/"
           onClick={() => handleNavigation("/")}
         >
           <ListItemText primary="About Me" />
         </ListItem>
         <ListItem
-          component={RouterLink}
+          className="contact-link"
+          component={Link}
           to="/contact"
           onClick={() => handleNavigation("/contact")}
         >
           <ListItemText primary="Contact Me" />
         </ListItem>
         <ListItem
-          component={RouterLink}
+          className="resume-link"
+          component={Link}
           to="/resume"
           onClick={() => handleNavigation("/resume")}
         >
@@ -78,13 +80,16 @@ const Navbar = () => {
           <ListItemText primary="GitHub" />
           <GitHubIcon />
         </ListItem>
-        <ListItem onClick={() => navigate("/indeed")}>
-          <ListItemText primary="Indeed" />
-          <BusinessCenterIcon />
+        <ListItem
+          onClick={() => window.open("https://www.linkedin.com", "_blank")}
+        >
+          <ListItemText primary="LinkedIn" />
+          <LinkedInIcon />
         </ListItem>
       </List>
     </Box>
   );
+
   return (
     <AppBar position="static" sx={{ backgroundColor: "black", color: "white" }}>
       <Toolbar>
@@ -111,7 +116,6 @@ const Navbar = () => {
                   onChange={handleChange}
                   aria-label="basic tabs example"
                 >
-                  {/* This Tab now points to the home page */}
                   <Tab
                     component={Link}
                     to="/"
@@ -134,9 +138,11 @@ const Navbar = () => {
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   <IconButton
                     color="inherit"
-                    onClick={() => navigate("/indeed")}
+                    onClick={() =>
+                      window.open("https://www.linkedin.com", "_blank")
+                    }
                   >
-                    <BusinessCenterIcon />
+                    <LinkedInIcon />
                   </IconButton>
                   <IconButton
                     color="inherit"
@@ -146,7 +152,9 @@ const Navbar = () => {
                   </IconButton>
                   <IconButton
                     color="inherit"
-                    onClick={() => navigate("/github")}
+                    onClick={() =>
+                      window.open("https://github.com/nivix047", "_blank")
+                    }
                   >
                     <GitHubIcon />
                   </IconButton>
