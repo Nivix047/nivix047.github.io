@@ -5,18 +5,20 @@ import "./Home.css";
 const Home = () => {
   return (
     <Box className="home-container">
-      {/* Top Box with the main header and image */}
-      <Grid container spacing={2} alignItems="center">
-        <Grid item xs={12} md={5}>
-          <Box className="home-image-box" />
+      <Box className="home-top-section">
+        {/* Top Box with the main header and image */}
+        <Grid container spacing={2} alignItems="center">
+          <Grid item xs={12} md={5}>
+            <Box className="home-image-box" />
+          </Grid>
+          <Grid item xs={12} md={7}>
+            <Typography variant="h3" className="home-header-text">
+              Crafting Web Magic with Full-stack Wizardry, AI Adventures, and
+              NFT Fun.
+            </Typography>
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={7}>
-          <Typography variant="h3" className="home-header-text">
-            Crafting Web Magic with Full-stack Wizardry, AI Adventures, and NFT
-            Fun.
-          </Typography>
-        </Grid>
-      </Grid>
+      </Box>
 
       {/* Bottom Box with three smaller images */}
       <Grid

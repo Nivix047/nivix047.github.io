@@ -14,6 +14,10 @@
   padding: 20px;
 }
 
+.home-top-section {
+  margin-bottom: 50px; /* This adds space between the top and bottom sections */
+}
+
 .home-bottom-box {
   margin-top: 32px; /* Adjust the top margin to match your design */
 }
@@ -22,7 +26,6 @@
   background-size: cover;
   background-position: center;
   height: 150px; /* Adjust the height to match your design */
-  margin-bottom: 8px;
 }
 
 .nft-website {
