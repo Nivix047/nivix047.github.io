@@ -5,8 +5,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <Box className="home-container">
+      {/* Top Box with the main header and image */}
       <Box className="home-top-section">
-        {/* Top Box with the main header and image */}
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>
             <Box className="home-image-box" />
@@ -24,26 +24,32 @@ const Home = () => {
       <Grid
         container
         spacing={4}
-        justifyContent="space-around"
+        justifyContent="center"
         className="home-bottom-box"
       >
-        <Grid item xs={12} sm={4}>
-          <Box className="home-project-image nft-website" />
-          <Typography variant="subtitle1" className="home-project-title">
-            NFT Website
-          </Typography>
+        <Grid item xs={4}>
+          <Box
+            className="home-project-image nft-website"
+            id="nft-website-typography"
+          >
+            <Typography variant="subtitle1" className="home-project-title">
+              NFT Website
+            </Typography>
+          </Box>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Box className="home-project-image knowledge-generator" />
-          <Typography variant="subtitle1" className="home-project-title">
-            Knowledge base generator
-          </Typography>
+        <Grid item xs={4}>
+          <Box className="home-project-image knowledge-generator">
+            <Typography variant="subtitle1" className="home-project-title">
+              Knowledge base generator
+            </Typography>
+          </Box>
         </Grid>
-        <Grid item xs={12} sm={4}>
-          <Box className="home-project-image chat-app" />
-          <Typography variant="subtitle1" className="home-project-title">
-            Chat App
-          </Typography>
+        <Grid item xs={4}>
+          <Box className="home-project-image chat-app">
+            <Typography variant="subtitle1" className="home-project-title">
+              Chat App
+            </Typography>
+          </Box>
         </Grid>
       </Grid>
     </Box>

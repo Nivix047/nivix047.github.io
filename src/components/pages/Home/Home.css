@@ -1,25 +1,26 @@
 .home-container {
   max-width: 1200px;
   margin: auto;
-  background-color: black; /* Set background to black */
-  color: white; /* Set text color to white */
-  padding-top: 5vh; /* Adjust top padding for space above the navbar */
+  background-color: black;
+  color: white;
+  padding-top: 5vh;
 }
 
 .home-top-section {
   border-top: 2px solid white;
-  background-color: black; /* Ensuring the background is black */
-  margin-top: 10vh; /* This adds space between the top and bottom sections */
-  margin-bottom: 10vh; /* This adds space between the top and bottom sections */
-  border-bottom: 2px solid white; /* White line at the bottom */
+  border-bottom: 2px solid white;
+  background-color: black;
+  position: relative;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .home-image-box {
-  height: 350px; /* Adjust the height to match your design */
+  height: 350px;
   background: url("../../../assets/avatar.png") no-repeat center center / cover;
   border-left: 2px solid white;
-  position: relative; /* For the bottom white line */
-  border-bottom: 2px solid white; /* White line at the bottom */
+  border-bottom: 2px solid white;
+  position: relative;
 }
 
 .home-header-text {
@@ -27,39 +28,64 @@
 }
 
 .home-bottom-box {
-  padding-left: 20vh;
-  padding-right: 20vh;
-  background-color: black; /* Ensure the background is black */
+  margin-top: 32px;
+  background-color: black;
 }
 
 .home-project-image {
   height: 16vh;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 8px;
+  width: 16vh;
+  margin: auto;
+  position: relative;
 }
 
 .home-project-title {
-  text-align: center; /* Center the title text */
+  text-align: center;
+  position: absolute;
+  bottom: -20px;
+  width: 100%;
 }
 
-/* Styles for the individual project images */
 .nft-website {
-  background: url("../../../assets/project1.png") no-repeat center center /
-    cover;
+  padding-bottom: 8vh;
 }
 
 .knowledge-generator {
-  background: url("../../../assets/project2.png") no-repeat center center /
-    cover;
+  padding-bottom: 8vh;
 }
 
 .chat-app {
+  padding-bottom: 8vh;
+}
+
+/* Styles for the individual project images */
+.nft-website::before,
+.knowledge-generator::before,
+.chat-app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.nft-website::before {
+  background: url("../../../assets/project1.png") no-repeat center center /
+    contain;
+}
+
+.knowledge-generator::before {
+  background: url("../../../assets/project2.png") no-repeat center center /
+    contain;
+}
+
+.chat-app::before {
   background: url("../../../assets/project3.png") no-repeat center center /
-    cover;
+    contain;
 }
 
 body {
-  background-color: black; /* Set your body background to black if it's not already */
-  margin: 0; /* Remove default margin */
+  background-color: black;
+  margin: 0;
 }
