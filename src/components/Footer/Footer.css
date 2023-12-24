@@ -13,7 +13,7 @@
   top: 0;
   left: 50%; /* Center the line */
   width: 80%; /* Or any width you prefer */
-  height: 1px;
+  height: 2px;
   background-color: white;
   transform: translateX(
     -50%
