@@ -23,25 +23,25 @@ const Home = () => {
       {/* Bottom Box with three smaller images */}
       <Grid
         container
-        spacing={2}
-        justifyContent="center"
+        spacing={4} // Increased spacing between the items
+        justifyContent="space-around" // Adjusted for even spacing around items
         className="home-bottom-box"
       >
-        <Grid item xs={6} sm={4} md={3} lg={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box className="home-project-image nft-website" />
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography variant="subtitle1" className="home-project-title">
             NFT Website
           </Typography>
         </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box className="home-project-image knowledge-generator" />
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography variant="subtitle1" className="home-project-title">
             Knowledge base generator
           </Typography>
         </Grid>
-        <Grid item xs={6} sm={4} md={3} lg={2}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
           <Box className="home-project-image chat-app" />
-          <Typography variant="subtitle1" gutterBottom>
+          <Typography variant="subtitle1" className="home-project-title">
             Chat App
           </Typography>
         </Grid>

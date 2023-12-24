@@ -3,31 +3,46 @@
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+  background-color: black; /* Set background to black */
+  color: white; /* Set text color to white */
+}
+
+.home-top-section {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-bottom: 50px; /* Space between the top and bottom sections */
+  background-color: black; /* Ensuring the background is black */
 }
 
 .home-image-box {
   background: url("../../../assets/avatar.png") no-repeat center center / cover;
   height: 400px; /* Adjust the height to match your design */
+  border-left: 2px solid white;
+  /* Removed the right border and moved top/bottom borders to the .home-top-section */
 }
 
 .home-header-text {
   padding: 20px;
 }
 
-.home-top-section {
-  margin-bottom: 50px; /* This adds space between the top and bottom sections */
-}
-
 .home-bottom-box {
   margin-top: 32px; /* Adjust the top margin to match your design */
+  background-color: black; /* Ensure the background is black */
 }
 
 .home-project-image {
   background-size: cover;
   background-position: center;
   height: 150px; /* Adjust the height to match your design */
+  margin-bottom: 8px;
+  /* Ensure that the background within the image is transparent or matches the container */
 }
 
+.home-project-title {
+  margin-top: 8px;
+}
+
+/* Styles for the individual project images */
 .nft-website {
   background: url("../../../assets/project1.png") no-repeat center center /
     cover;
@@ -41,4 +56,9 @@
 .chat-app {
   background: url("../../../assets/project3.png") no-repeat center center /
     cover;
+}
+
+/* Additional global settings to ensure backgrounds are consistent */
+body {
+  background-color: black; /* If your body isn't set to black, set it here */
 }
