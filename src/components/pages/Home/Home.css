@@ -1,20 +1,18 @@
+/* Home.css */
 .home-container {
   padding: 20px;
 }
 
 .home-image-box {
-  text-align: center;
-  padding: 20px;
-}
-
-.home-portrait {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%; /* If you want a circular mask for the image */
+  width: 100%; /* Take full width of the grid */
+  height: 100%; /* Take full height for alignment */
+  background: url("../../../assets/avatar.png") no-repeat center center / cover; /* Update with the correct path */
 }
 
 .home-header-box {
   padding: 20px;
+  display: flex;
+  align-items: center; /* This will vertically center the text */
 }
 
 .home-bottom-box {
@@ -24,9 +22,11 @@
 .home-image-paper {
   text-align: center;
   padding: 10px;
+  height: 200px; /* Set a fixed height for uniformity */
 }
 
 .home-image {
   max-width: 100%;
-  height: auto;
+  max-height: 100%;
+  object-fit: contain; /* This will make sure the image fits within the element */
 }

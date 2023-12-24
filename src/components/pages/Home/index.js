@@ -4,20 +4,14 @@ import "./Home.css";
 
 const Home = () => {
   return (
-    <Box className="home-container" sx={{ border: "2px solid black" }}>
+    <Box className="home-container">
       {/* Top Box with 20-80 split */}
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={4} md={2} sx={{ border: "2px solid black" }}>
-          {/* Left Side - Image */}
-          <Box className="home-image-box">
-            <img
-              src="path-to-your-image.jpg"
-              alt="Your Portrait"
-              className="home-portrait"
-            />
-          </Box>
+        <Grid item xs={12} sm={4} md={2}>
+          {/* Left Side - Portrait as a background image */}
+          <Box className="home-image-box" />
         </Grid>
-        <Grid item xs={12} sm={8} md={10} sx={{ border: "2px solid black" }}>
+        <Grid item xs={12} sm={8} md={10}>
           {/* Right Side - Header */}
           <Box className="home-header-box">
             <Typography variant="h3">
@@ -34,10 +28,10 @@ const Home = () => {
         spacing={2}
         justifyContent="space-around"
         className="home-bottom-box"
-        sx={{ border: "2px solid black" }}
       >
-        <Grid item sx={{ border: "2px solid black" }}>
+        <Grid item xs={12} sm={4} md={4}>
           <Paper className="home-image-paper">
+            {/* Placeholder Image - replace with actual image paths */}
             <img
               src="path-to-nft-website.jpg"
               alt="NFT Website"
@@ -46,8 +40,9 @@ const Home = () => {
             <Typography variant="subtitle1">NFT Website</Typography>
           </Paper>
         </Grid>
-        <Grid item sx={{ border: "2px solid black" }}>
+        <Grid item xs={12} sm={4} md={4}>
           <Paper className="home-image-paper">
+            {/* Placeholder Image - replace with actual image paths */}
             <img
               src="path-to-knowledge-generator.jpg"
               alt="Knowledge base generator"
@@ -58,8 +53,9 @@ const Home = () => {
             </Typography>
           </Paper>
         </Grid>
-        <Grid item sx={{ border: "2px solid black" }}>
+        <Grid item xs={12} sm={4} md={4}>
           <Paper className="home-image-paper">
+            {/* Placeholder Image - replace with actual image paths */}
             <img
               src="path-to-chat-app.jpg"
               alt="Chat App"
