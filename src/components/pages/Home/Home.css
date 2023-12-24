@@ -11,10 +11,21 @@
   border-bottom: 2px solid white;
   background-color: black;
   position: relative;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-}
 
+  /* Default margin-top for mobile and smaller screens */
+  margin-top: 0; /* Adjust this value as needed for mobile view */
+  margin-bottom: 5vh;
+
+  /* Media query for tablet screens */
+  @media screen and (min-width: 600px) and (max-width: 899px) {
+    margin-top: 5vh; /* Moderate margin for tablet view */
+  }
+
+  /* Media query for larger screens (e.g., desktop) */
+  @media screen and (min-width: 900px) {
+    margin-top: 10vh; /* Larger margin for desktop view */
+  }
+}
 .home-image-box {
   height: 350px;
   background: url("../../../assets/avatar.png") no-repeat center center / cover;
@@ -28,8 +39,7 @@
 }
 
 .home-bottom-box {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   background-color: black;
 }
 
