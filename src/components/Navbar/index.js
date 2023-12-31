@@ -117,15 +117,15 @@ const Navbar = () => {
         {!isMobile && (
           <Tabs
             value={value}
-            onChange={handleChange}
+            onChange={(e, newValue) => setValue(newValue)}
             aria-label="basic tabs example"
-            TabIndicatorProps={{ style: { display: "none" } }}
+            TabIndicatorProps={{ style: { backgroundColor: "white" } }}
             sx={{
               ".MuiTab-root": {
                 fontSize: "1.2rem",
                 textTransform: "uppercase",
                 color: "white",
-                "&:hover": { textDecoration: "underline" },
+                "&.Mui-selected": { color: "white" },
               },
             }}
           >
