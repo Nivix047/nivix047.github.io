@@ -1,31 +1,3 @@
-/* Footer/Footer.css */
-.footer-container {
-  position: relative; /* Needed for absolute positioning of the pseudo-element */
-  padding: 20px;
-  background-color: black;
-  color: white;
-  box-sizing: border-box;
-}
-
-.footer-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%; /* Center the line */
-  width: 80%; /* Or any width you prefer */
-  height: 2px;
-  background-color: white;
-  transform: translateX(
-    -50%
-  ); /* Center the line with respect to the container */
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .footer-logo {
   background-image: url("../../assets/logo.png");
   background-size: contain;
