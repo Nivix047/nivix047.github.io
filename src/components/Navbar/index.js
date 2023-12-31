@@ -9,6 +9,8 @@ import {
   IconButton,
   Drawer,
   List,
+  ListItem,
+  ListItemText,
   Tab,
   Tabs,
 } from "@mui/material";
@@ -29,12 +31,12 @@ const Navbar = () => {
   };
 
   const handleDrawerToggle = () => {
-    setDrawerOpen(!drawerOpen);
+    setDrawerOpen((prevDrawerOpen) => !prevDrawerOpen);
   };
 
   const handleNavigation = (path) => {
-    setDrawerOpen(false);
     navigate(path);
+    setDrawerOpen(false);
   };
 
   const drawerContent = (
@@ -42,11 +44,56 @@ const Navbar = () => {
       sx={{
         width: 250,
         role: "presentation",
-        onClick: handleDrawerToggle,
-        onKeyDown: handleDrawerToggle,
       }}
     >
-      <List>{/* ... List Items ... */}</List>
+      <List>
+        <ListItem
+          button
+          component={Link}
+          to="/"
+          onClick={() => handleNavigation("/")}
+        >
+          <ListItemText primary="About Me" />
+        </ListItem>
+        <ListItem
+          button
+          component={Link}
+          to="/contact"
+          onClick={() => handleNavigation("/contact")}
+        >
+          <ListItemText primary="Contact Me" />
+        </ListItem>
+        <ListItem
+          button
+          component={Link}
+          to="/resume"
+          onClick={() => handleNavigation("/resume")}
+        >
+          <ListItemText primary="Resume" />
+        </ListItem>
+        {/* Social Media Links */}
+        <ListItem
+          button
+          onClick={() => window.open("https://www.linkedin.com", "_blank")}
+        >
+          <LinkedInIcon sx={{ mr: 1 }} />
+          <ListItemText primary="LinkedIn" />
+        </ListItem>
+        <ListItem
+          button
+          onClick={() => window.open("https://twitter.com", "_blank")}
+        >
+          <TwitterIcon sx={{ mr: 1 }} />
+          <ListItemText primary="Twitter" />
+        </ListItem>
+        <ListItem
+          button
+          onClick={() => window.open("https://github.com", "_blank")}
+        >
+          <GitHubIcon sx={{ mr: 1 }} />
+          <ListItemText primary="GitHub" />
+        </ListItem>
+      </List>
     </Box>
   );
 
