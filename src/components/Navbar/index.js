@@ -26,10 +26,6 @@ const Navbar = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const navigate = useNavigate();
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
   const handleDrawerToggle = () => {
     setDrawerOpen((prevDrawerOpen) => !prevDrawerOpen);
   };
@@ -47,16 +43,10 @@ const Navbar = () => {
       }}
     >
       <List>
-        <ListItem
-          button
-          component={Link}
-          to="/"
-          onClick={() => handleNavigation("/")}
-        >
+        <ListItem component={Link} to="/" onClick={() => handleNavigation("/")}>
           <ListItemText primary="About Me" />
         </ListItem>
         <ListItem
-          button
           component={Link}
           to="/contact"
           onClick={() => handleNavigation("/contact")}
@@ -64,7 +54,6 @@ const Navbar = () => {
           <ListItemText primary="Contact Me" />
         </ListItem>
         <ListItem
-          button
           component={Link}
           to="/resume"
           onClick={() => handleNavigation("/resume")}
@@ -73,23 +62,16 @@ const Navbar = () => {
         </ListItem>
         {/* Social Media Links */}
         <ListItem
-          button
           onClick={() => window.open("https://www.linkedin.com", "_blank")}
         >
           <LinkedInIcon sx={{ mr: 1 }} />
           <ListItemText primary="LinkedIn" />
         </ListItem>
-        <ListItem
-          button
-          onClick={() => window.open("https://twitter.com", "_blank")}
-        >
+        <ListItem onClick={() => window.open("https://twitter.com", "_blank")}>
           <TwitterIcon sx={{ mr: 1 }} />
           <ListItemText primary="Twitter" />
         </ListItem>
-        <ListItem
-          button
-          onClick={() => window.open("https://github.com", "_blank")}
-        >
+        <ListItem onClick={() => window.open("https://github.com", "_blank")}>
           <GitHubIcon sx={{ mr: 1 }} />
           <ListItemText primary="GitHub" />
         </ListItem>
@@ -98,7 +80,13 @@ const Navbar = () => {
   );
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: "black", color: "white" }}>
+    <AppBar
+      position="static"
+      sx={{
+        backgroundColor: "black",
+        color: "white",
+      }}
+    >
       <Toolbar>
         {isMobile && (
           <IconButton
