@@ -97,13 +97,17 @@ const Contact = () => {
       <Container maxWidth="lg">
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" gutterBottom className="contact-header">
+            <Typography
+              variant="h1"
+              gutterBottom
+              sx={{ textDecoration: "underline" }}
+            >
               Hello, World. Let's Connect!
             </Typography>
-            <Typography variant="h4">
+            <Typography variant="h2">
               Embarking on a coding adventure and need a fellow traveler? Wheter
               it's a project, a problem, or just tech talk, I'm here! Fill out
-              the form and let's code something amazing together!
+              the form and let's code something amazing together!{" "}
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>

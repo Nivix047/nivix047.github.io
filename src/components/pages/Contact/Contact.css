@@ -43,20 +43,3 @@
 .contact-form .MuiButton-root:hover {
   background-color: #373737; /* Adjust color as needed */
 }
-
-.contact-header {
-  position: relative; /* Required for the absolute positioning of the pseudo-element */
-  display: inline-block; /* Makes the element only as wide as its content */
-  margin-bottom: 6vh; /* Spacing below the header, adjust as needed */
-  border-bottom: none; /* Remove the existing underline if any */
-}
-
-.contact-header::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -10px; /* Adjust as needed to position the line */
-  height: 2px; /* Thickness of the underline */
-  background-color: white; /* Color of the underline */
-}
