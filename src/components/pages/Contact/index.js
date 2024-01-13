@@ -98,13 +98,16 @@ const Contact = () => {
         <Grid container spacing={3}>
           <Grid item xs={12} md={6}>
             <Typography
-              variant="h1"
+              variant="h2"
               gutterBottom
-              sx={{ textDecoration: "underline" }}
+              sx={{
+                borderBottom: "2px solid white",
+                paddingBottom: "0.5rem",
+              }}
             >
               Hello, World. Let's Connect!
             </Typography>
-            <Typography variant="h2">
+            <Typography variant="h4">
               Embarking on a coding adventure and need a fellow traveler? Wheter
               it's a project, a problem, or just tech talk, I'm here! Fill out
               the form and let's code something amazing together!{" "}
