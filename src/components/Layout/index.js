@@ -8,17 +8,15 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <Router>
-      <div>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/terms" element={<Terms />} />
-          {/* Add more routes as needed */}
-        </Routes>
-        <Footer />
-      </div>
+    <Router basename="portfolio_2024">
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/terms" element={<Terms />} />
+        {/* Add more routes as needed */}
+      </Routes>
+      <Footer />
     </Router>
   );
 }
