@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function Layout() {
   return (
-    <Router>
+    <Router basename="portfolio_2024">
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
