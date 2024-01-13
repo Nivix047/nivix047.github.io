@@ -1,18 +1,33 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
-import "./Home.css";
+import "./Home.css"; // Ensure this path is correct
 
 const Home = () => {
   return (
-    <Box className="home-container">
+    <Box
+      sx={{
+        maxWidth: 1200,
+        mx: "auto", // 'mx' is shorthand for margin-left and margin-right
+        backgroundColor: "black",
+        color: "white",
+        pt: "5vh", // paddingTop
+      }}
+    >
       {/* Top Box with the main header and image */}
-      <Box className="home-top-section">
+      <Box
+        sx={{
+          borderTop: "2px solid white",
+          borderBottom: "2px solid white",
+          mt: { xs: 0, sm: "5vh", md: "10vh" }, // Responsive margin-top
+          mb: "5vh", // marginBottom
+        }}
+      >
         <Grid container spacing={2} alignItems="center">
           <Grid item xs={12} md={4}>
             <Box className="home-image-box" />
           </Grid>
           <Grid item xs={12} md={8}>
-            <Typography variant="h3" className="home-header-text">
+            <Typography variant="h3" sx={{ p: 2 }}>
               Crafting Web Magic with Full-stack Wizardry, AI Adventures, and
               NFT Fun.
             </Typography>
@@ -21,27 +36,23 @@ const Home = () => {
       </Box>
 
       {/* Bottom Box with three smaller images */}
-      <Grid
-        container
-        spacing={4}
-        justifyContent="center"
-        className="home-bottom-box"
-      >
+      <Grid container spacing={4} justifyContent="center" sx={{ mb: "10vh" }}>
+        {/* NFT Website */}
         <Grid item xs={4}>
           <a
             href="https://sacred-genesis.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Box
-              className="home-project-image nft-website"
-              id="nft-website-typography"
-            >
+            <Box className="home-project-image nft-website">
               <Typography
                 variant="subtitle1"
-                className="home-project-title"
                 sx={{
                   color: "white",
+                  textAlign: "center",
+                  position: "absolute",
+                  bottom: "-20px",
+                  width: "100%",
                 }}
               >
                 NFT Website
@@ -49,6 +60,8 @@ const Home = () => {
             </Box>
           </a>
         </Grid>
+
+        {/* Knowledge Base Generator */}
         <Grid item xs={4}>
           <a
             href="https://github.com/Nivix047/kb_generator"
@@ -58,16 +71,21 @@ const Home = () => {
             <Box className="home-project-image knowledge-generator">
               <Typography
                 variant="subtitle1"
-                className="home-project-title"
                 sx={{
                   color: "white",
+                  textAlign: "center",
+                  position: "absolute",
+                  bottom: "-40px",
+                  width: "100%",
                 }}
               >
-                Knowledge base generator
+                Knowledge Base Generator
               </Typography>
             </Box>
           </a>
         </Grid>
+
+        {/* Chat App */}
         <Grid item xs={4}>
           <a
             href="https://github.com/Nivix047/django-dm"
@@ -77,9 +95,12 @@ const Home = () => {
             <Box className="home-project-image chat-app">
               <Typography
                 variant="subtitle1"
-                className="home-project-title"
                 sx={{
                   color: "white",
+                  textAlign: "center",
+                  position: "absolute",
+                  bottom: "-20px",
+                  width: "100%",
                 }}
               >
                 Chat App
