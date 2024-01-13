@@ -40,16 +40,23 @@ const Navbar = () => {
       sx={{
         width: 250,
         role: "presentation",
+        color: "black",
       }}
     >
       <List>
-        <ListItem component={Link} to="/" onClick={() => handleNavigation("/")}>
+        <ListItem
+          component={Link}
+          to="/"
+          onClick={() => handleNavigation("/")}
+          sx={{ color: "black" }}
+        >
           <ListItemText primary="About Me" />
         </ListItem>
         <ListItem
           component={Link}
           to="/contact"
           onClick={() => handleNavigation("/contact")}
+          sx={{ color: "black" }}
         >
           <ListItemText primary="Contact Me" />
         </ListItem>
@@ -57,6 +64,7 @@ const Navbar = () => {
           component={Link}
           to="/resume"
           onClick={() => handleNavigation("/resume")}
+          sx={{ color: "black" }}
         >
           <ListItemText primary="Resume" />
         </ListItem>
@@ -71,7 +79,14 @@ const Navbar = () => {
           <TwitterIcon sx={{ mr: 1 }} />
           <ListItemText primary="Twitter" />
         </ListItem>
-        <ListItem onClick={() => window.open("https://github.com", "_blank")}>
+        <ListItem
+          onClick={() =>
+            window.open(
+              "https://github.com/Nivix047?tab=repositories",
+              "_blank"
+            )
+          }
+        >
           <GitHubIcon sx={{ mr: 1 }} />
           <ListItemText primary="GitHub" />
         </ListItem>
@@ -140,7 +155,12 @@ const Navbar = () => {
           </IconButton>
           <IconButton
             color="inherit"
-            onClick={() => window.open("https://github.com", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://github.com/Nivix047?tab=repositories",
+                "_blank"
+              )
+            }
             sx={{ fontSize: "1.5rem" }}
           >
             <GitHubIcon />
