@@ -1,7 +1,6 @@
 .contact-container {
   background-color: black;
   color: white;
-  min-height: 16vh;
   padding-top: 64px; /* Adjust as needed */
   padding-bottom: 64px; /* Adjust as needed */
 }

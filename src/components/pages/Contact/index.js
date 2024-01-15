@@ -156,7 +156,7 @@ const Contact = () => {
                 onFocus={handleInputFocus}
                 variant="filled"
                 multiline
-                rows={20}
+                rows={35}
                 fullWidth
                 InputLabelProps={{ style: { color: "white" } }}
                 InputProps={{ style: { color: "white" } }}
