@@ -75,10 +75,6 @@ const Navbar = () => {
           <LinkedInIcon sx={{ mr: 1 }} />
           <ListItemText primary="LinkedIn" />
         </ListItem>
-        <ListItem onClick={() => window.open("https://twitter.com", "_blank")}>
-          <TwitterIcon sx={{ mr: 1 }} />
-          <ListItemText primary="Twitter" />
-        </ListItem>
         <ListItem
           onClick={() =>
             window.open(
@@ -145,13 +141,6 @@ const Navbar = () => {
             sx={{ fontSize: "1.5rem" }}
           >
             <LinkedInIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            onClick={() => window.open("https://twitter.com", "_blank")}
-            sx={{ fontSize: "1.5rem" }}
-          >
-            <TwitterIcon />
           </IconButton>
           <IconButton
             color="inherit"
