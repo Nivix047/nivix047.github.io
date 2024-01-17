@@ -4,6 +4,7 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import Contact from "../pages/Contact";
 import Terms from "../pages/Terms";
+import Resume from "../pages/Resume";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function Layout() {
@@ -14,6 +15,7 @@ export default function Layout() {
         <Route exact path="/" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/resume" element={<Resume />} />
         {/* Add more routes as needed */}
       </Routes>
       <Footer />
