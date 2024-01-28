@@ -8,13 +8,17 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        position: "relative",
+        paddingLeft: "20px",
         padding: "20px",
         backgroundColor: "black",
         color: "white",
         width: "100%",
-        "&::before": {
-          content: '""',
+        position: "relative",
+      }}
+    >
+      {/* Top Border */}
+      <Box
+        sx={{
           position: "absolute",
           top: 0,
           left: "50%",
@@ -22,48 +26,59 @@ const Footer = () => {
           height: "2px",
           backgroundColor: "white",
           transform: "translateX(-50%)",
-        },
-      }}
-    >
+        }}
+      />
+      <Box
+        sx={{
+          position: "absolute",
+          bottom: 0, // Aligns the border to the bottom
+          left: "50%",
+          width: "80%",
+          height: "2px",
+          backgroundColor: "white",
+          transform: "translateX(-50%)",
+        }}
+      />
+      {/* Content */}
       <Grid
         container
-        alignItems="center"
-        sx={{ display: "flex", justifyContent: "flex-end" }}
+        direction="row" // Change to row direction
+        alignItems="center" // Center items vertically
+        justifyContent="center" // Center items horizontally
+        spacing={2} // Add some space between items
       >
-        <Grid
-          item
-          xs={12}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "flex-end",
-          }}
-        >
-          <Box flexGrow={1} />
-          <Box sx={{ mr: "10px" }} className="footer-logo-box">
-            {/* Logo is maintained in CSS */}
-            <div className="footer-logo"></div>
-          </Box>
-          <Box>
-            <Typography variant="body2" sx={{ textAlign: "center" }}>
-              ©2024 Sacred Genesis
-            </Typography>
-            <Typography variant="body2" className="footer-link-item">
-              <MuiLink
-                component={Link}
-                to="/terms"
-                color="inherit"
-                underline="none"
-                sx={{
-                  "&:hover": {
-                    textDecoration: "underline",
-                  },
-                }}
-              >
-                Terms & Conditions
-              </MuiLink>
-            </Typography>
-          </Box>
+        <Grid item>
+          <Box className="footer-logo" />
+        </Grid>
+        <Grid item>
+          <Grid
+            container
+            direction="column" // Stack text items vertically
+            alignItems="center" // Center items horizontally
+          >
+            <Grid item>
+              <Typography variant="body1" sx={{ textAlign: "center" }}>
+                ©2024 Sacred Genesis
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="body2" sx={{ textAlign: "center" }}>
+                <MuiLink
+                  component={Link}
+                  to="/terms"
+                  color="inherit"
+                  underline="none"
+                  sx={{
+                    "&:hover": {
+                      textDecoration: "underline",
+                    },
+                  }}
+                >
+                  Terms & Conditions
+                </MuiLink>
+              </Typography>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Box>

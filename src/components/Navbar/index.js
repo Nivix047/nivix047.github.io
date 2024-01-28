@@ -120,7 +120,7 @@ const Navbar = () => {
             TabIndicatorProps={{ style: { backgroundColor: "white" } }}
             sx={{
               ".MuiTab-root": {
-                fontSize: "1.2rem",
+                fontSize: "25px",
                 textTransform: "uppercase",
                 color: "white",
                 "&.Mui-selected": { color: "white" },
@@ -137,9 +137,8 @@ const Navbar = () => {
           <IconButton
             color="inherit"
             onClick={() => window.open("https://www.linkedin.com", "_blank")}
-            sx={{ fontSize: "1.5rem" }}
           >
-            <LinkedInIcon />
+            <LinkedInIcon sx={{ fontSize: "35px" }} />
           </IconButton>
           <IconButton
             color="inherit"
@@ -151,7 +150,7 @@ const Navbar = () => {
             }
             sx={{ fontSize: "1.5rem" }}
           >
-            <GitHubIcon />
+            <GitHubIcon sx={{ fontSize: "35px" }} />
           </IconButton>
         </Box>
       </Toolbar>
