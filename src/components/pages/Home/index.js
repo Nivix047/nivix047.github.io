@@ -8,7 +8,6 @@ const Home = () => {
       sx={{
         maxWidth: 1200,
         mx: "auto", // 'mx' is shorthand for margin-left and margin-right
-        backgroundColor: "black",
         color: "white",
         pt: "5vh", // paddingTop
       }}
@@ -48,6 +47,7 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
+                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
@@ -72,6 +72,7 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
+                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
@@ -96,6 +97,7 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
+                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
