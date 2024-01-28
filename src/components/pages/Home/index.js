@@ -47,7 +47,6 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
@@ -72,7 +71,6 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
@@ -97,7 +95,6 @@ const Home = () => {
               <Typography
                 variant="subtitle1"
                 sx={{
-                  fontSize: "18px",
                   color: "white",
                   textAlign: "center",
                   position: "absolute",
