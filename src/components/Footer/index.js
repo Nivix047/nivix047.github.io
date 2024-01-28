@@ -28,6 +28,7 @@ const Footer = () => {
           transform: "translateX(-50%)",
         }}
       />
+      {/* Bottom Border */}
       <Box
         sx={{
           position: "absolute",
