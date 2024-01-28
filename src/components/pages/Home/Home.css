@@ -1,52 +1,7 @@
-.home-container {
-  max-width: 1200px;
-  margin: auto;
-  color: white;
-  padding-top: 5vh;
-}
-
-.home-top-section {
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  margin-top: 0;
-  margin-bottom: 5vh;
-}
-
-@media screen and (min-width: 600px) and (max-width: 899px) {
-  .home-top-section {
-    margin-top: 5vh;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .home-top-section {
-    margin-top: 10vh;
-  }
-}
-
 .home-image-box {
   height: 350px;
   background: url("../../../assets/avatar.png") no-repeat center center / cover;
   border-left: 2px solid white;
-}
-
-.home-header-text {
-  padding: 20px;
-}
-
-.home-bottom-box {
-  margin-bottom: 10vh;
-}
-
-.home-project-image {
-  height: 16vh;
-  width: 16vh;
-  margin: auto;
-  position: relative;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding-bottom: 10vh;
 }
 
 .nft-website {
