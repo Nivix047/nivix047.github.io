@@ -10,10 +10,11 @@ const Footer = () => {
       sx={{
         paddingLeft: "20px",
         padding: "20px",
-        backgroundColor: "black",
         color: "white",
         width: "100%",
         position: "relative",
+        borderLeft: "2px solid white",
+        borderRight: "2px solid white",
       }}
     >
       {/* Top Border */}
@@ -48,6 +49,7 @@ const Footer = () => {
         justifyContent="center" // Center items horizontally
         spacing={2} // Add some space between items
       >
+        {/* Logo */}
         <Grid item>
           <Box className="footer-logo" />
         </Grid>
@@ -57,11 +59,13 @@ const Footer = () => {
             direction="column" // Stack text items vertically
             alignItems="center" // Center items horizontally
           >
+            {/* Sacred Genesis Typography */}
             <Grid item>
               <Typography variant="body1" sx={{ textAlign: "center" }}>
                 ©2024 Sacred Genesis
               </Typography>
             </Grid>
+            {/* Terms & Conditions Link */}
             <Grid item>
               <Typography variant="body2" sx={{ textAlign: "center" }}>
                 <MuiLink
