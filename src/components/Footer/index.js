@@ -13,8 +13,6 @@ const Footer = () => {
         color: "white",
         width: "100%",
         position: "relative",
-        borderLeft: "2px solid white",
-        borderRight: "2px solid white",
       }}
     >
       {/* Top Border */}

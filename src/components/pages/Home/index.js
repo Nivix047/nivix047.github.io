@@ -48,33 +48,46 @@ const Home = () => {
             style={{ textDecoration: "none" }}
           >
             <Box
-              className="home-project-image nft-website"
               sx={{
-                height: "16vh",
-                width: "16vh",
                 margin: "auto",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
                 alignItems: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Box>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                fontSize: "20px",
-                color: "white",
-                textAlign: "center",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
-                p: 1,
-                width: "100%",
+                transition: "transform 0.3s",
+                ":hover": {
+                  transform: "scale(1.1)",
+                },
               }}
             >
-              NFT Website
-            </Typography>
+              <Box
+                className="home-project-image nft-website"
+                sx={{
+                  height: "16vh",
+                  width: "16vh",
+                  margin: "auto",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></Box>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  fontSize: "20px",
+                  color: "white",
+                  textAlign: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  p: 1,
+                  width: "100%",
+                }}
+              >
+                NFT Website
+              </Typography>
+            </Box>
           </a>
         </Grid>
 
@@ -87,33 +100,46 @@ const Home = () => {
             style={{ textDecoration: "none" }}
           >
             <Box
-              className="home-project-image knowledge-generator"
               sx={{
-                height: "16vh",
-                width: "16vh",
                 margin: "auto",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
                 alignItems: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Box>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                fontSize: "20px",
-                color: "white",
-                textAlign: "center",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
-                p: 1,
-                width: "100%",
+                transition: "transform 0.3s",
+                ":hover": {
+                  transform: "scale(1.1)",
+                },
               }}
             >
-              Knowledge Base Generator
-            </Typography>
+              <Box
+                className="home-project-image knowledge-generator"
+                sx={{
+                  height: "16vh",
+                  width: "16vh",
+                  margin: "auto",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></Box>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  fontSize: "20px",
+                  color: "white",
+                  textAlign: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  p: 1,
+                  width: "100%",
+                }}
+              >
+                Knowledge Base Generator
+              </Typography>
+            </Box>
           </a>
         </Grid>
 
@@ -126,33 +152,46 @@ const Home = () => {
             style={{ textDecoration: "none" }}
           >
             <Box
-              className="home-project-image chat-app"
               sx={{
-                height: "16vh",
-                width: "16vh",
                 margin: "auto",
                 display: "flex",
                 flexDirection: "column",
-                justifyContent: "center",
                 alignItems: "center",
-                backgroundSize: "contain",
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-              }}
-            ></Box>
-            <Typography
-              variant="subtitle1"
-              sx={{
-                fontSize: "20px",
-                color: "white",
-                textAlign: "center",
-                backgroundColor: "rgba(0, 0, 0, 0.5)",
-                p: 1,
-                width: "100%",
+                transition: "transform 0.3s",
+                ":hover": {
+                  transform: "scale(1.1)",
+                },
               }}
             >
-              Chat App
-            </Typography>
+              <Box
+                className="home-project-image chat-app"
+                sx={{
+                  height: "16vh",
+                  width: "16vh",
+                  margin: "auto",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundSize: "contain",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                }}
+              ></Box>
+              <Typography
+                variant="subtitle1"
+                sx={{
+                  fontSize: "20px",
+                  color: "white",
+                  textAlign: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  p: 1,
+                  width: "100%",
+                }}
+              >
+                Chat App
+              </Typography>
+            </Box>
           </a>
         </Grid>
       </Grid>
