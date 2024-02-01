@@ -20,7 +20,7 @@ const ResumePage = () => {
         flexDirection: "column",
       }}
     >
-      <Box sx={{ overflowX: "auto" }}>
+      <Box sx={{ overflowX: "auto", maxWidth: "100%" }}>
         <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
           <Page pageNumber={1} scale={1.2} renderTextLayer={false} />
         </Document>
