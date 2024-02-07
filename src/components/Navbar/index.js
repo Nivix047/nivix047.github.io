@@ -69,7 +69,12 @@ const Navbar = () => {
         </ListItem>
         {/* Social Media Links */}
         <ListItem
-          onClick={() => window.open("https://www.linkedin.com", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://www.linkedin.com/in/daniel-xu-40132b2b3/",
+              "_blank"
+            )
+          }
         >
           <LinkedInIcon sx={{ mr: 1 }} />
           <ListItemText primary="LinkedIn" />
@@ -136,7 +141,12 @@ const Navbar = () => {
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <IconButton
             color="inherit"
-            onClick={() => window.open("https://www.linkedin.com", "_blank")}
+            onClick={() =>
+              window.open(
+                "https://www.linkedin.com/in/daniel-xu-40132b2b3/",
+                "_blank"
+              )
+            }
           >
             <LinkedInIcon sx={{ fontSize: "35px" }} />
           </IconButton>
