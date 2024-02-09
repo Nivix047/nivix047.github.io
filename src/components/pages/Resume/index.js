@@ -22,7 +22,7 @@ const ResumePage = () => {
     >
       <Box sx={{ overflowX: "auto", maxWidth: "100%" }}>
         <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={1} scale={1.2} renderTextLayer={false} />
+          <Page pageNumber={1} scale={2.0} renderTextLayer={false} />
         </Document>
       </Box>
       <Button
