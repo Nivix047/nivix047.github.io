@@ -96,13 +96,14 @@ const Contact = () => {
     <Box className="contact-container">
       <Container maxWidth="lg">
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <Typography
               variant="h2"
               gutterBottom
               sx={{
                 borderBottom: "2px solid white",
                 paddingBottom: "0.5rem",
+                textAlign: "center",
               }}
             >
               Hello, World. Let's Connect!
@@ -113,7 +114,7 @@ const Contact = () => {
               the form and let's code something amazing together!{" "}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12}>
             <Box
               component="form"
               noValidate
