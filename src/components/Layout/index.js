@@ -6,7 +6,7 @@ import Footer from "../Footer";
 import Contact from "../pages/Contact";
 import Terms from "../pages/Terms";
 import Resume from "../pages/Resume";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 const theme = createTheme({
   typography: {
@@ -17,7 +17,7 @@ const theme = createTheme({
 export default function Layout() {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename="portfolio_2024">
+      <Router>
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
