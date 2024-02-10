@@ -1,8 +1,8 @@
 {
-  "name": "portfolio_2024",
+  "name": "nivix047.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nivix047.github.io/portfolio_2024",
+  "homepage": "https://nivix047.github.io/",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
