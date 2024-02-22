@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Portfolio Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio page, a project designed to showcase my notable projects and demonstrate my skills in React.js and Material UI (MUI). This portfolio is built with an eye for design and functionality, utilizing React's component-based architecture along with the versatility and aesthetic of MUI components.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The purpose of this portfolio is twofold:
 
-### `npm start`
+- **Showcase Work**: To present my notable projects, detailing the technologies used and the challenges overcome.
+- **Demonstrate Skills**: To illustrate my proficiency in React.js and Material UI, highlighting my ability to create responsive, user-friendly web applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [Material UI (MUI)](https://mui.com/) - A popular React UI framework offering a comprehensive suite of components and customization options.
+- [EmailJS](https://www.emailjs.com/) - Allows sending emails directly from the frontend without needing a backend service, used for the contact form integration.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This portfolio includes several key features:
 
-### `npm run build`
+- **Responsive Navbar**: A dynamic navigation bar that adjusts to screen size, providing a seamless browsing experience on any device.
+- **Custom Theme**: Utilizes MUI's `createTheme` for consistent styling across components, emphasizing a unique monospace typography.
+- **Routing**: Implements React Router for smooth navigation between the Home, Contact, Resume, and Terms pages.
+- **Contact Form**: A fully functional contact form built with emailjs-com integration, allowing visitors to reach out directly through the site.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get a local copy up and running, follow these simple steps.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `npm run eject`
+Ensure you have the latest version of [Node.js](https://nodejs.org/) installed. This project was bootstrapped with [Create React App](https://create-react-app.dev/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Install Dependencies**: Run `npm install` to install the required dependencies for the project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Environment Variables**: For the contact form to function properly, you'll need to set up environment variables required by EmailJS. Create a `.env` file in the root directory of your project and include the following variables:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- REACT_APP_EMAILJS_SERVICE_ID=<Your_EmailJS_Service_ID>
+- REACT_APP_EMAILJS_TEMPLATE_ID=<Your_EmailJS_Template_ID>
+- REACT_APP_EMAILJS_USER_ID=<Your_EmailJS_User_ID>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. **Start the Application**: Run `npm start` to launch the application in development mode. The app will be accessible at [http://localhost:3000](http://localhost:3000), where you can view and interact with your portfolio.
