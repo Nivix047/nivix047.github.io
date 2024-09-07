@@ -60,7 +60,7 @@ const Footer = () => {
             {/* Sacred Genesis Typography */}
             <Grid item>
               <Typography variant="body1" sx={{ textAlign: "center" }}>
-                ©2024 Sacred Genesis
+                ©2024 Daniel Xu
               </Typography>
             </Grid>
             {/* Terms & Conditions Link */}
